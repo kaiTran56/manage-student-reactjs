@@ -1,6 +1,6 @@
 export const GET_STUDENT_BY_COURSE = "https://manage-student-api.herokuapp.com/api/student/";
 
-export const GET_ALL_STUDENT = "http://localhost:8080/api/student/api/student";
+export const GET_ALL_STUDENT = "https://manage-student-api.herokuapp.com/api/student";
 
 export const GET_COURSE = "https://manage-student-api.herokuapp.com/api/course";
 
