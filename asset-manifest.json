@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/manage-student-reactjs/static/css/main.44a0a66c.chunk.css",
+    "main.js": "/manage-student-reactjs/static/js/main.d4efee93.chunk.js",
+    "main.js.map": "/manage-student-reactjs/static/js/main.d4efee93.chunk.js.map",
+    "runtime-main.js": "/manage-student-reactjs/static/js/runtime-main.67589eeb.js",
+    "runtime-main.js.map": "/manage-student-reactjs/static/js/runtime-main.67589eeb.js.map",
+    "static/js/2.aa53fbf3.chunk.js": "/manage-student-reactjs/static/js/2.aa53fbf3.chunk.js",
+    "static/js/2.aa53fbf3.chunk.js.map": "/manage-student-reactjs/static/js/2.aa53fbf3.chunk.js.map",
+    "static/js/3.9f52f61b.chunk.js": "/manage-student-reactjs/static/js/3.9f52f61b.chunk.js",
+    "static/js/3.9f52f61b.chunk.js.map": "/manage-student-reactjs/static/js/3.9f52f61b.chunk.js.map",
+    "index.html": "/manage-student-reactjs/index.html",
+    "static/css/main.44a0a66c.chunk.css.map": "/manage-student-reactjs/static/css/main.44a0a66c.chunk.css.map",
+    "static/js/2.aa53fbf3.chunk.js.LICENSE.txt": "/manage-student-reactjs/static/js/2.aa53fbf3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67589eeb.js",
+    "static/js/2.aa53fbf3.chunk.js",
+    "static/css/main.44a0a66c.chunk.css",
+    "static/js/main.d4efee93.chunk.js"
+  ]
+}
