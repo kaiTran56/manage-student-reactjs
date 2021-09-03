@@ -7,3 +7,5 @@ export const GET_COURSE = "https://manage-student-api.herokuapp.com/api/course";
 export const DOWNLOAD_EXCEL_FILE = "https://manage-student-api.herokuapp.com/api/excel/download";
 
 export const SAVE_STUDENT = "https://manage-student-api.herokuapp.com/student/save";
+
+export const HELLO_WORLD = "";
