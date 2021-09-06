@@ -250,10 +250,16 @@ class AddingStudent extends Component {
         let { codeOfClass, name, dob, gender, phone, note } = this.state;
 
         let errorName = [];
-        if (codeOfClass === "") {
+        if (codeOfClass === ""||codeOfClass===null||codeOfClass===undefined) {
             errorName.push("CodeOfClass")
         }
+        if (!phone.match("^[0-9]{10}$")) {
+            alert("Wrong format of phone!");
+        }
 
+        if (name.length > 25) {
+            alert("Wrong format of name, not too 25 characters!");
+        }
 
         if (dob === "") {
             errorName.push("dob")
@@ -265,13 +271,7 @@ class AddingStudent extends Component {
             errorName.push("phone")
         }
 
-        if (!phone.match("^[0-9]{10}$")) {
-            alert("Wrong format of phone!");
-        }
-
-        if (name.length > 25) {
-            alert("Wrong format of name, not too 25 characters!");
-        }
+        
         if (name === "") {
             errorName.push("name")
         }
@@ -359,6 +359,7 @@ class AddingStudent extends Component {
         } else {
             alert("Please not empty! " + errorName);
         }
+        
 
 
     }
@@ -386,14 +387,24 @@ class AddingStudent extends Component {
             note: note_1,
         }
         if (singleCheck_1) {
-            if (!phone_1.match("^[0-9]{10}$")) {
-                alert("Wrong format of phone!");
-            } else if (name_1.length > 25) {
-                alert("Wrong format of name, not too 25 characters!");
+            if (!phone_1.match("^[0-9]{10}$")|| phone_1 ==="") {
+                alert("Student_1: Wrong format of phone!");
+            }
+            if(codeOfClass_1 ===""||codeOfClass_1===null||codeOfClass_1===undefined){
+                alert("Student_1: Please not empty code of class");
+            }
+            if (dob_1 === "") {
+                alert("Student_1: Please not empty code of class");
+            }          
+            if(gender_1 ===""){
+                alert("Student_1: Please not empty gender");
+            }
+            if (name_1.length > 25 || name_1 === "") {
+                alert("Student_1: Wrong format of name, not too 25 characters!");
             } else {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
-
+                        alert("Save Student_1 information successfully!");
                     })
                     ;
             }
@@ -438,11 +449,27 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_2) {
-            axios.post(typeURL.SAVE_STUDENT, studentTemp)
-                .then(response => {
-
-                })
-                ;
+            if (!phone_2.match("^[0-9]{10}$")|| phone_2 ==="") {
+                alert("Student_2: Wrong format of phone!");
+            }
+            if(codeOfClass_2 ===""||codeOfClass_2===null||codeOfClass_2===undefined){
+                alert("Student_2: Please not empty code of class");
+            }
+            if (dob_2 === "") {
+                alert("Student_2: Please not empty code of class");
+            }          
+            if(gender_2 ===""){
+                alert("Student_2: Please not empty gender");
+            }
+            if (name_2.length > 25 || name_2 === "") {
+                alert("Student_2: Wrong format of name, not too 25 characters!");
+            } else {
+                axios.post(typeURL.SAVE_STUDENT, studentTemp)
+                    .then(response => {
+                        alert("Save Student_2 information successfully!");
+                    })
+                    ;
+            }
         }
     }
     createStudent_3 = (event) => {
@@ -469,11 +496,27 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_3) {
-            axios.post(typeURL.SAVE_STUDENT, studentTemp)
-                .then(response => {
-
-                })
-                ;
+            if (!phone_3.match("^[0-9]{10}$")|| phone_3 ==="") {
+                alert("Student_3: Wrong format of phone!");
+            }
+            if(codeOfClass_3 ===""||codeOfClass_3===null||codeOfClass_3===undefined){
+                alert("Student_3: Please not empty code of class");
+            }
+            if (dob_3 === "") {
+                alert("Student_3: Please not empty code of class");
+            }          
+            if(gender_3 ===""){
+                alert("Student_3: Please not empty gender");
+            }
+            if (name_3.length > 25 || name_3 === "") {
+                alert("Student_3: Wrong format of name, not too 25 characters!");
+            } else {
+                axios.post(typeURL.SAVE_STUDENT, studentTemp)
+                    .then(response => {
+                        alert("Save Student_3 information successfully!");
+                    })
+                    ;
+            }
         }
     }
     createStudent_4 = (event) => {
@@ -500,11 +543,27 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_4) {
-            axios.post(typeURL.SAVE_STUDENT, studentTemp)
-                .then(response => {
-
-                })
-                ;
+            if (!phone_4.match("^[0-9]{10}$")|| phone_4 ==="") {
+                alert("Student_4: Wrong format of phone!");
+            }
+            if(codeOfClass_4 ===""||codeOfClass_4===null||codeOfClass_4===undefined){
+                alert("Student_4: Please not empty code of class");
+            }
+            if (dob_4 === "") {
+                alert("Student_4: Please not empty code of class");
+            }          
+            if(gender_4 ===""){
+                alert("Student_4: Please not empty gender");
+            }
+            if (name_4.length > 25 || name_4 === "") {
+                alert("Student_4: Wrong format of name, not too 25 characters!");
+            } else {
+                axios.post(typeURL.SAVE_STUDENT, studentTemp)
+                    .then(response => {
+                        alert("Save Student_4 information successfully!");
+                    })
+                    ;
+            }
         }
     }
     createStudent_5 = (event) => {
@@ -531,11 +590,27 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_5) {
-            axios.post(typeURL.SAVE_STUDENT, studentTemp)
-                .then(response => {
-
-                })
-                ;
+            if (!phone_5.match("^[0-9]{10}$")|| phone_5 ==="") {
+                alert("Student_5: Wrong format of phone!");
+            }
+            if(codeOfClass_5 ===""||codeOfClass_5===null||codeOfClass_5===undefined){
+                alert("Student_5: Please not empty code of class");
+            }
+            if (dob_5 === "") {
+                alert("Student_5: Please not empty code of class");
+            }          
+            if(gender_5 ===""){
+                alert("Student_5: Please not empty gender");
+            }
+            if (name_5.length > 25 || name_5 === "") {
+                alert("Student_5: Wrong format of name, not too 25 characters!");
+            } else {
+                axios.post(typeURL.SAVE_STUDENT, studentTemp)
+                    .then(response => {
+                        alert("Save Student_5 information successfully!");
+                    })
+                    ;
+            }
         }
     }
     createStudent_6 = (event) => {
@@ -562,11 +637,27 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_6) {
-            axios.post(typeURL.SAVE_STUDENT, studentTemp)
-                .then(response => {
-
-                })
-                ;
+            if (!phone_6.match("^[0-9]{10}$")|| phone_6 ==="") {
+                alert("Student_6: Wrong format of phone!");
+            }
+            if(codeOfClass_6 ===""||codeOfClass_6===null||codeOfClass_6===undefined){
+                alert("Student_6: Please not empty code of class");
+            }
+            if (dob_6 === "") {
+                alert("Student_6: Please not empty code of class");
+            }          
+            if(gender_6 ===""){
+                alert("Student_6: Please not empty gender");
+            }
+            if (name_6.length > 25 || name_6 === "") {
+                alert("Student_6: Wrong format of name, not too 25 characters!");
+            } else {
+                axios.post(typeURL.SAVE_STUDENT, studentTemp)
+                    .then(response => {
+                        alert("Save Student_6 information successfully!");
+                    })
+                    ;
+            }
         }
     }
     createStudent_7 = (event) => {
@@ -593,11 +684,27 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_7) {
-            axios.post(typeURL.SAVE_STUDENT, studentTemp)
-                .then(response => {
-
-                })
-                ;
+            if (!phone_7.match("^[0-9]{10}$")|| phone_7 ==="") {
+                alert("Student_7: Wrong format of phone!");
+            }
+            if(codeOfClass_7 ===""||codeOfClass_7===null||codeOfClass_7===undefined){
+                alert("Student_7: Please not empty code of class");
+            }
+            if (dob_7 === "") {
+                alert("Student_7: Please not empty code of class");
+            }          
+            if(gender_7 ===""){
+                alert("Student_7: Please not empty gender");
+            }
+            if (name_7.length > 25 || name_7 === "") {
+                alert("Student_7: Wrong format of name, not too 25 characters!");
+            } else {
+                axios.post(typeURL.SAVE_STUDENT, studentTemp)
+                    .then(response => {
+                        alert("Save Student_7 information successfully!");
+                    })
+                    ;
+            }
         }
     }
     createStudent_8 = (event) => {
@@ -624,11 +731,27 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_8) {
-            axios.post(typeURL.SAVE_STUDENT, studentTemp)
-                .then(response => {
-
-                })
-                ;
+            if (!phone_8.match("^[0-9]{10}$")|| phone_8 ==="") {
+                alert("Student_8: Wrong format of phone!");
+            }
+            if(codeOfClass_8 ===""||codeOfClass_8===null||codeOfClass_8===undefined){
+                alert("Student_8: Please not empty code of class");
+            }
+            if (dob_8 === "") {
+                alert("Student_8: Please not empty code of class");
+            }          
+            if(gender_8 ===""){
+                alert("Student_8: Please not empty gender");
+            }
+            if (name_8.length > 25 || name_8 === "") {
+                alert("Student_8: Wrong format of name, not too 25 characters!");
+            } else {
+                axios.post(typeURL.SAVE_STUDENT, studentTemp)
+                    .then(response => {
+                        alert("Save Student_8 information successfully!");
+                    })
+                    ;
+            }
         }
     }
     createStudent_9 = (event) => {
@@ -655,11 +778,27 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_9) {
-            axios.post(typeURL.SAVE_STUDENT, studentTemp)
-                .then(response => {
-
-                })
-                ;
+            if (!phone_9.match("^[0-9]{10}$")|| phone_9 ==="") {
+                alert("Student_9: Wrong format of phone!");
+            }
+            if(codeOfClass_9 ===""||codeOfClass_9===null||codeOfClass_9===undefined){
+                alert("Student_9: Please not empty code of class");
+            }
+            if (dob_9 === "") {
+                alert("Student_9: Please not empty code of class");
+            }          
+            if(gender_9 ===""){
+                alert("Student_9: Please not empty gender");
+            }
+            if (name_9.length > 25 || name_9 === "") {
+                alert("Student_9: Wrong format of name, not too 25 characters!");
+            } else {
+                axios.post(typeURL.SAVE_STUDENT, studentTemp)
+                    .then(response => {
+                        alert("Save Student_9 information successfully!");
+                    })
+                    ;
+            }
         }
     }
     createStudent_10 = (event) => {
@@ -686,11 +825,27 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_10) {
-            axios.post(typeURL.SAVE_STUDENT, studentTemp)
-                .then(response => {
-
-                })
-                ;
+            if (!phone_10.match("^[0-9]{10}$")|| phone_10 ==="") {
+                alert("Student_10: Wrong format of phone!");
+            }
+            if(codeOfClass_10 ===""||codeOfClass_10===null||codeOfClass_10===undefined){
+                alert("Student_10: Please not empty code of class");
+            }
+            if (dob_10 === "") {
+                alert("Student_10: Please not empty code of class");
+            }          
+            if(gender_10 ===""){
+                alert("Student_10: Please not empty gender");
+            }
+            if (name_10.length > 25 || name_10 === "") {
+                alert("Student_10: Wrong format of name, not too 25 characters!");
+            } else {
+                axios.post(typeURL.SAVE_STUDENT, studentTemp)
+                    .then(response => {
+                        alert("Save Student_10 information successfully!");
+                    })
+                    ;
+            }
         }
 
 
@@ -713,7 +868,7 @@ class AddingStudent extends Component {
         this.saveStudent_10();
 
         if ((singleCheck_1 || singleCheck_2 || singleCheck_3 || singleCheck_4 || singleCheck_5 || singleCheck_6 || singleCheck_7 || singleCheck_8 || singleCheck_9 || this.onSingleCheck_10) === true) {
-            alert("Save Student information successfully!");
+            
         } else if ((singleCheck_1 && singleCheck_2 && singleCheck_3 && singleCheck_4 && singleCheck_5 && singleCheck_6 && singleCheck_7 && singleCheck_8 && singleCheck_9 && this.onSingleCheck_10) === false) {
             alert("Nothing to save Student information!");
         }
