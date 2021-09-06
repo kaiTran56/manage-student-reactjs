@@ -1224,11 +1224,11 @@ class AddingStudent extends Component {
                             </tr>
 
                             {/* \---------------------------------------------------------------------\ */}
+
                             <tr className="d-flex " >
                                 <th className="col-1 text-center sticky-col first-col">
-
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="checkbox" checked={singleCheck_2} name="singleCheck_2" onClick={this.onSingleCheck_2} />
+                                        <input className="form-check-input" type="checkbox" name="singleCheck_2" checked={singleCheck_2} onClick={this.onSingleCheck_2} />
                                         <label className="form-check-label" for="inlineCheckbox1">2</label>
                                     </div>
                                 </th>
@@ -1242,36 +1242,35 @@ class AddingStudent extends Component {
                                 <td className="col-2 sticky-col third-col">
 
                                     <input type="text"
-                                        className="form-control " name="name_2" value={name_2} aria-describedby="helpId" placeholder="Tên học sinh" onChange={this.createStudent_2} />
+                                        className="form-control " name="name_2" aria-describedby="helpId" placeholder="Tên học sinh" value={name_2} onChange={this.createStudent_2} />
                                 </td>
                                 <td className="col-2">
                                     <input type="date"
-                                        className="form-control " name="dob_2" value={dob_2} aria-describedby="helpId" onChange={this.createStudent_2} />
+                                        className="form-control " name="dob_2" aria-describedby="helpId" value={dob_2} onChange={this.createStudent_2} />
                                 </td>
                                 <td className="col-1">
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_2" value={gender_2} checked={gender_2 === "Nam"} onChange={this.createStudent_2} />
+                                        <input className="form-check-input" type="radio" name="gender_2" value="Nam" checked={gender_2 === "Nam"} onChange={this.createStudent_2} />
                                         <label className="form-check-label small" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_2" value={gender_2} checked={gender_2 === "Nu"} onChange={this.createStudent_2} />
+                                        <input className="form-check-input" type="radio" name="gender_2" value="Nu" checked={gender_2 === "Nu"} onChange={this.createStudent_2} />
                                         <label className="form-check-label small" for="inlineRadio2">Nữ</label>
                                     </div>
                                 </td>
                                 <td className="col-2">
                                     <input type="text"
-                                        className="form-control " name="phone_2" value={phone_2} aria-describedby="helpId" placeholder="Số điện thoại" onChange={this.createStudent_2} />
+                                        className="form-control " name="phone_2" aria-describedby="helpId" placeholder="Số điện thoại" value={phone_2} onChange={this.createStudent_2} />
                                 </td>
                                 <td className="col-2">
-                                    <textarea className="form-control" name="note_2" value={note_2} rows="1" onChange={this.createStudent_2}></textarea>
+                                    <textarea className="form-control" name="note_2" rows="1" value={note_2} onChange={this.createStudent_2}></textarea>
                                 </td>
                             </tr>
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className="d-flex " >
                                 <th className="col-1 text-center sticky-col first-col">
-
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="checkbox" checked={singleCheck_3} name="singleCheck_3" onClick={this.onSingleCheck_3} />
+                                        <input className="form-check-input" type="checkbox" name="singleCheck_3" checked={singleCheck_3} onClick={this.onSingleCheck_3} />
                                         <label className="form-check-label" for="inlineCheckbox1">3</label>
                                     </div>
                                 </th>
@@ -1285,37 +1284,35 @@ class AddingStudent extends Component {
                                 <td className="col-2 sticky-col third-col">
 
                                     <input type="text"
-                                        className="form-control " name="name_3" value={name_3} aria-describedby="helpId" placeholder="Tên học sinh" onChange={this.createStudent_3} />
+                                        className="form-control " name="name_3" aria-describedby="helpId" placeholder="Tên học sinh" value={name_3} onChange={this.createStudent_3} />
                                 </td>
                                 <td className="col-2">
                                     <input type="date"
-                                        className="form-control " name="dob_3" value={dob_3} aria-describedby="helpId" onChange={this.createStudent_3} />
+                                        className="form-control " name="dob_3" aria-describedby="helpId" value={dob_3} onChange={this.createStudent_3} />
                                 </td>
                                 <td className="col-1">
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_3" value={gender_3} checked={gender_3 === "Nam"} onChange={this.createStudent_3} />
+                                        <input className="form-check-input" type="radio" name="gender_3" value="Nam" checked={gender_3 === "Nam"} onChange={this.createStudent_3} />
                                         <label className="form-check-label small" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_3" value={gender_3} checked={gender_3 === "Nu"} onChange={this.createStudent_3} />
+                                        <input className="form-check-input" type="radio" name="gender_3" value="Nu" checked={gender_3 === "Nu"} onChange={this.createStudent_3} />
                                         <label className="form-check-label small" for="inlineRadio2">Nữ</label>
                                     </div>
                                 </td>
                                 <td className="col-2">
                                     <input type="text"
-                                        className="form-control " name="phone_3" value={phone_3} aria-describedby="helpId" placeholder="Số điện thoại" onChange={this.createStudent_3} />
+                                        className="form-control " name="phone_3" aria-describedby="helpId" placeholder="Số điện thoại" value={phone_3} onChange={this.createStudent_3} />
                                 </td>
                                 <td className="col-2">
-                                    <textarea className="form-control" name="note_3" value={note_3} rows="1" onChange={this.createStudent_3}></textarea>
+                                    <textarea className="form-control" name="note_3" rows="1" value={note_3} onChange={this.createStudent_3}></textarea>
                                 </td>
                             </tr>
-
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className="d-flex " >
                                 <th className="col-1 text-center sticky-col first-col">
-
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="checkbox" checked={singleCheck_4} name="singleCheck_4" onClick={this.onSingleCheck_4} />
+                                        <input className="form-check-input" type="checkbox" name="singleCheck_4" checked={singleCheck_4} onClick={this.onSingleCheck_4} />
                                         <label className="form-check-label" for="inlineCheckbox1">4</label>
                                     </div>
                                 </th>
@@ -1329,37 +1326,36 @@ class AddingStudent extends Component {
                                 <td className="col-2 sticky-col third-col">
 
                                     <input type="text"
-                                        className="form-control " name="name_4" value={name_4} aria-describedby="helpId" placeholder="Tên học sinh" onChange={this.createStudent_4} />
+                                        className="form-control " name="name_4" aria-describedby="helpId" placeholder="Tên học sinh" value={name_4} onChange={this.createStudent_4} />
                                 </td>
                                 <td className="col-2">
                                     <input type="date"
-                                        className="form-control " name="dob_4" value={dob_4} aria-describedby="helpId" onChange={this.createStudent_4} />
+                                        className="form-control " name="dob_4" aria-describedby="helpId" value={dob_4} onChange={this.createStudent_4} />
                                 </td>
                                 <td className="col-1">
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_4" value={gender_4} checked={gender_4 === "Nam"} onChange={this.createStudent_4} />
+                                        <input className="form-check-input" type="radio" name="gender_4" value="Nam" checked={gender_4 === "Nam"} onChange={this.createStudent_4} />
                                         <label className="form-check-label small" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_4" value={gender_4} checked={gender_4 === "Nu"} onChange={this.createStudent_4} />
+                                        <input className="form-check-input" type="radio" name="gender_4" value="Nu" checked={gender_4 === "Nu"} onChange={this.createStudent_4} />
                                         <label className="form-check-label small" for="inlineRadio2">Nữ</label>
                                     </div>
                                 </td>
                                 <td className="col-2">
                                     <input type="text"
-                                        className="form-control " name="phone_4" value={phone_4} aria-describedby="helpId" placeholder="Số điện thoại" onChange={this.createStudent_4} />
+                                        className="form-control " name="phone_4" aria-describedby="helpId" placeholder="Số điện thoại" value={phone_4} onChange={this.createStudent_4} />
                                 </td>
                                 <td className="col-2">
-                                    <textarea className="form-control" name="note_4" value={note_4} rows="1" onChange={this.createStudent_4}></textarea>
+                                    <textarea className="form-control" name="note_4" rows="1" value={note_4} onChange={this.createStudent_4}></textarea>
                                 </td>
                             </tr>
 
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className="d-flex " >
                                 <th className="col-1 text-center sticky-col first-col">
-
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="checkbox" checked={singleCheck_5} name="singleCheck_5" onClick={this.onSingleCheck_5} />
+                                        <input className="form-check-input" type="checkbox" name="singleCheck_5" checked={singleCheck_5} onClick={this.onSingleCheck_5} />
                                         <label className="form-check-label" for="inlineCheckbox1">5</label>
                                     </div>
                                 </th>
@@ -1373,37 +1369,35 @@ class AddingStudent extends Component {
                                 <td className="col-2 sticky-col third-col">
 
                                     <input type="text"
-                                        className="form-control " name="name_5" value={name_5} aria-describedby="helpId" placeholder="Tên học sinh" onChange={this.createStudent_5} />
+                                        className="form-control " name="name_5" aria-describedby="helpId" placeholder="Tên học sinh" value={name_5} onChange={this.createStudent_5} />
                                 </td>
                                 <td className="col-2">
                                     <input type="date"
-                                        className="form-control " name="dob_5" value={dob_5} aria-describedby="helpId" onChange={this.createStudent_5} />
+                                        className="form-control " name="dob_5" aria-describedby="helpId" value={dob_5} onChange={this.createStudent_5} />
                                 </td>
                                 <td className="col-1">
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_5" value={gender_5} checked={gender_5 === "Nam"} onChange={this.createStudent_5} />
+                                        <input className="form-check-input" type="radio" name="gender_5" value="Nam" checked={gender_5 === "Nam"} onChange={this.createStudent_5} />
                                         <label className="form-check-label small" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_5" value={gender_5} checked={gender_5 === "Nu"} onChange={this.createStudent_5} />
+                                        <input className="form-check-input" type="radio" name="gender_5" value="Nu" checked={gender_5 === "Nu"} onChange={this.createStudent_5} />
                                         <label className="form-check-label small" for="inlineRadio2">Nữ</label>
                                     </div>
                                 </td>
                                 <td className="col-2">
                                     <input type="text"
-                                        className="form-control " name="phone_5" value={phone_5} aria-describedby="helpId" placeholder="Số điện thoại" onChange={this.createStudent_5} />
+                                        className="form-control " name="phone_5" aria-describedby="helpId" placeholder="Số điện thoại" value={phone_5} onChange={this.createStudent_5} />
                                 </td>
                                 <td className="col-2">
-                                    <textarea className="form-control" name="note_5" value={note_5} rows="1" onChange={this.createStudent_5}></textarea>
+                                    <textarea className="form-control" name="note_5" rows="1" value={note_5} onChange={this.createStudent_5}></textarea>
                                 </td>
                             </tr>
-
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className="d-flex " >
                                 <th className="col-1 text-center sticky-col first-col">
-
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="checkbox" checked={singleCheck_6} name="singleCheck_6" onClick={this.onSingleCheck_6} />
+                                        <input className="form-check-input" type="checkbox" name="singleCheck_6" checked={singleCheck_6} onClick={this.onSingleCheck_6} />
                                         <label className="form-check-label" for="inlineCheckbox1">6</label>
                                     </div>
                                 </th>
@@ -1417,37 +1411,35 @@ class AddingStudent extends Component {
                                 <td className="col-2 sticky-col third-col">
 
                                     <input type="text"
-                                        className="form-control " name="name_6" value={name_6} aria-describedby="helpId" placeholder="Tên học sinh" onChange={this.createStudent_6} />
+                                        className="form-control " name="name_6" aria-describedby="helpId" placeholder="Tên học sinh" value={name_6} onChange={this.createStudent_6} />
                                 </td>
                                 <td className="col-2">
                                     <input type="date"
-                                        className="form-control " name="dob_6" value={dob_6} aria-describedby="helpId" onChange={this.createStudent_6} />
+                                        className="form-control " name="dob_6" aria-describedby="helpId" value={dob_6} onChange={this.createStudent_6} />
                                 </td>
                                 <td className="col-1">
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_6" value={gender_6} checked={gender_6 === "Nam"} onChange={this.createStudent_6} />
+                                        <input className="form-check-input" type="radio" name="gender_6" value="Nam" checked={gender_6 === "Nam"} onChange={this.createStudent_6} />
                                         <label className="form-check-label small" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_6" value={gender_6} checked={gender_6 === "Nu"} onChange={this.createStudent_6} />
+                                        <input className="form-check-input" type="radio" name="gender_6" value="Nu" checked={gender_6 === "Nu"} onChange={this.createStudent_6} />
                                         <label className="form-check-label small" for="inlineRadio2">Nữ</label>
                                     </div>
                                 </td>
                                 <td className="col-2">
                                     <input type="text"
-                                        className="form-control " name="phone_6" value={phone_6} aria-describedby="helpId" placeholder="Số điện thoại" onChange={this.createStudent_6} />
+                                        className="form-control " name="phone_6" aria-describedby="helpId" placeholder="Số điện thoại" value={phone_6} onChange={this.createStudent_6} />
                                 </td>
                                 <td className="col-2">
-                                    <textarea className="form-control" name="note_6" value={note_6} rows="1" onChange={this.createStudent_6}></textarea>
+                                    <textarea className="form-control" name="note_6" rows="1" value={note_6} onChange={this.createStudent_6}></textarea>
                                 </td>
                             </tr>
-
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className="d-flex " >
                                 <th className="col-1 text-center sticky-col first-col">
-
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="checkbox" checked={singleCheck_7} name="singleCheck_7" onClick={this.onSingleCheck_7} />
+                                        <input className="form-check-input" type="checkbox" name="singleCheck_7" checked={singleCheck_7} onClick={this.onSingleCheck_7} />
                                         <label className="form-check-label" for="inlineCheckbox1">7</label>
                                     </div>
                                 </th>
@@ -1461,37 +1453,36 @@ class AddingStudent extends Component {
                                 <td className="col-2 sticky-col third-col">
 
                                     <input type="text"
-                                        className="form-control " name="name_7" value={name_7} aria-describedby="helpId" placeholder="Tên học sinh" onChange={this.createStudent_7} />
+                                        className="form-control " name="name_7" aria-describedby="helpId" placeholder="Tên học sinh" value={name_7} onChange={this.createStudent_7} />
                                 </td>
                                 <td className="col-2">
                                     <input type="date"
-                                        className="form-control " name="dob_7" value={dob_7} aria-describedby="helpId" onChange={this.createStudent_7} />
+                                        className="form-control " name="dob_7" aria-describedby="helpId" value={dob_7} onChange={this.createStudent_7} />
                                 </td>
                                 <td className="col-1">
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_7" value={gender_7} checked={gender_7 === "Nam"} onChange={this.createStudent_7} />
+                                        <input className="form-check-input" type="radio" name="gender_7" value="Nam" checked={gender_7 === "Nam"} onChange={this.createStudent_7} />
                                         <label className="form-check-label small" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_7" value={gender_7} checked={gender_7 === "Nu"} onChange={this.createStudent_7} />
+                                        <input className="form-check-input" type="radio" name="gender_7" value="Nu" checked={gender_7 === "Nu"} onChange={this.createStudent_7} />
                                         <label className="form-check-label small" for="inlineRadio2">Nữ</label>
                                     </div>
                                 </td>
                                 <td className="col-2">
                                     <input type="text"
-                                        className="form-control " name="phone_7" value={phone_7} aria-describedby="helpId" placeholder="Số điện thoại" onChange={this.createStudent_7} />
+                                        className="form-control " name="phone_7" aria-describedby="helpId" placeholder="Số điện thoại" value={phone_7} onChange={this.createStudent_7} />
                                 </td>
                                 <td className="col-2">
-                                    <textarea className="form-control" name="note_7" value={note_7} rows="1" onChange={this.createStudent_7}></textarea>
+                                    <textarea className="form-control" name="note_7" rows="1" value={note_7} onChange={this.createStudent_7}></textarea>
                                 </td>
                             </tr>
 
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className="d-flex " >
                                 <th className="col-1 text-center sticky-col first-col">
-
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="checkbox" checked={singleCheck_8} name="singleCheck_8" onClick={this.onSingleCheck_8} />
+                                        <input className="form-check-input" type="checkbox" name="singleCheck_8" checked={singleCheck_8} onClick={this.onSingleCheck_8} />
                                         <label className="form-check-label" for="inlineCheckbox1">8</label>
                                     </div>
                                 </th>
@@ -1505,37 +1496,36 @@ class AddingStudent extends Component {
                                 <td className="col-2 sticky-col third-col">
 
                                     <input type="text"
-                                        className="form-control " name="name_8" value={name_8} aria-describedby="helpId" placeholder="Tên học sinh" onChange={this.createStudent_8} />
+                                        className="form-control " name="name_8" aria-describedby="helpId" placeholder="Tên học sinh" value={name_8} onChange={this.createStudent_8} />
                                 </td>
                                 <td className="col-2">
                                     <input type="date"
-                                        className="form-control " name="dob_8" value={dob_8} aria-describedby="helpId" onChange={this.createStudent_8} />
+                                        className="form-control " name="dob_8" aria-describedby="helpId" value={dob_8} onChange={this.createStudent_8} />
                                 </td>
                                 <td className="col-1">
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_8" value={gender_8} checked={gender_8 === "Nam"} onChange={this.createStudent_8} />
+                                        <input className="form-check-input" type="radio" name="gender_8" value="Nam" checked={gender_8 === "Nam"} onChange={this.createStudent_8} />
                                         <label className="form-check-label small" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_8" value={gender_8} checked={gender_8 === "Nu"} onChange={this.createStudent_8} />
+                                        <input className="form-check-input" type="radio" name="gender_8" value="Nu" checked={gender_8 === "Nu"} onChange={this.createStudent_8} />
                                         <label className="form-check-label small" for="inlineRadio2">Nữ</label>
                                     </div>
                                 </td>
                                 <td className="col-2">
                                     <input type="text"
-                                        className="form-control " name="phone_8" value={phone_8} aria-describedby="helpId" placeholder="Số điện thoại" onChange={this.createStudent_8} />
+                                        className="form-control " name="phone_8" aria-describedby="helpId" placeholder="Số điện thoại" value={phone_8} onChange={this.createStudent_8} />
                                 </td>
                                 <td className="col-2">
-                                    <textarea className="form-control" name="note_8" value={note_8} rows="1" onChange={this.createStudent_8}></textarea>
+                                    <textarea className="form-control" name="note_8" rows="1" value={note_8} onChange={this.createStudent_8}></textarea>
                                 </td>
                             </tr>
 
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className="d-flex " >
                                 <th className="col-1 text-center sticky-col first-col">
-
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="checkbox" checked={singleCheck_9} name="singleCheck_9" onClick={this.onSingleCheck_9} />
+                                        <input className="form-check-input" type="checkbox" name="singleCheck_9" checked={singleCheck_9} onClick={this.onSingleCheck_9} />
                                         <label className="form-check-label" for="inlineCheckbox1">9</label>
                                     </div>
                                 </th>
@@ -1549,37 +1539,36 @@ class AddingStudent extends Component {
                                 <td className="col-2 sticky-col third-col">
 
                                     <input type="text"
-                                        className="form-control " name="name_9" value={name_9} aria-describedby="helpId" placeholder="Tên học sinh" onChange={this.createStudent_9} />
+                                        className="form-control " name="name_9" aria-describedby="helpId" placeholder="Tên học sinh" value={name_9} onChange={this.createStudent_9} />
                                 </td>
                                 <td className="col-2">
                                     <input type="date"
-                                        className="form-control " name="dob_9" value={dob_9} aria-describedby="helpId" onChange={this.createStudent_9} />
+                                        className="form-control " name="dob_9" aria-describedby="helpId" value={dob_9} onChange={this.createStudent_9} />
                                 </td>
                                 <td className="col-1">
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_9" value={gender_9} checked={gender_9 === "Nam"} onChange={this.createStudent_9} />
+                                        <input className="form-check-input" type="radio" name="gender_9" value="Nam" checked={gender_9 === "Nam"} onChange={this.createStudent_9} />
                                         <label className="form-check-label small" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_9" value={gender_9} checked={gender_9 === "Nu"} onChange={this.createStudent_9} />
+                                        <input className="form-check-input" type="radio" name="gender_9" value="Nu" checked={gender_9 === "Nu"} onChange={this.createStudent_9} />
                                         <label className="form-check-label small" for="inlineRadio2">Nữ</label>
                                     </div>
                                 </td>
                                 <td className="col-2">
                                     <input type="text"
-                                        className="form-control " name="phone_9" value={phone_9} aria-describedby="helpId" placeholder="Số điện thoại" onChange={this.createStudent_9} />
+                                        className="form-control " name="phone_9" aria-describedby="helpId" placeholder="Số điện thoại" value={phone_9} onChange={this.createStudent_9} />
                                 </td>
                                 <td className="col-2">
-                                    <textarea className="form-control" name="note_9" value={note_9} rows="1" onChange={this.createStudent_9}></textarea>
+                                    <textarea className="form-control" name="note_9" rows="1" value={note_9} onChange={this.createStudent_9}></textarea>
                                 </td>
                             </tr>
 
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className="d-flex " >
                                 <th className="col-1 text-center sticky-col first-col">
-
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="checkbox" checked={singleCheck_10} name="singleCheck_10" onClick={this.onSingleCheck_10} />
+                                        <input className="form-check-input" type="checkbox" name="singleCheck_10" checked={singleCheck_10} onClick={this.onSingleCheck_10} />
                                         <label className="form-check-label" for="inlineCheckbox1">10</label>
                                     </div>
                                 </th>
@@ -1593,28 +1582,28 @@ class AddingStudent extends Component {
                                 <td className="col-2 sticky-col third-col">
 
                                     <input type="text"
-                                        className="form-control " name="name_10" value={name_10} aria-describedby="helpId" placeholder="Tên học sinh" onChange={this.createStudent_10} />
+                                        className="form-control " name="name_10" aria-describedby="helpId" placeholder="Tên học sinh" value={name_10} onChange={this.createStudent_10} />
                                 </td>
                                 <td className="col-2">
                                     <input type="date"
-                                        className="form-control " name="dob_10" value={dob_10} aria-describedby="helpId" onChange={this.createStudent_10} />
+                                        className="form-control " name="dob_10" aria-describedby="helpId" value={dob_10} onChange={this.createStudent_10} />
                                 </td>
                                 <td className="col-1">
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_10" value={gender_10} checked={gender_10 === "Nam"} onChange={this.createStudent_10} />
+                                        <input className="form-check-input" type="radio" name="gender_10" value="Nam" checked={gender_10 === "Nam"} onChange={this.createStudent_10} />
                                         <label className="form-check-label small" for="inlineRadio1">Nam</label>
                                     </div>
                                     <div className="form-check form-check-inline">
-                                        <input className="form-check-input" type="radio" name="gender_10" value={gender_10} checked={gender_10 === "Nu"} onChange={this.createStudent_10} />
+                                        <input className="form-check-input" type="radio" name="gender_10" value="Nu" checked={gender_10 === "Nu"} onChange={this.createStudent_10} />
                                         <label className="form-check-label small" for="inlineRadio2">Nữ</label>
                                     </div>
                                 </td>
                                 <td className="col-2">
                                     <input type="text"
-                                        className="form-control " name="phone_10" value={phone_10} aria-describedby="helpId" placeholder="Số điện thoại" onChange={this.createStudent_10} />
+                                        className="form-control " name="phone_10" aria-describedby="helpId" placeholder="Số điện thoại" value={phone_10} onChange={this.createStudent_10} />
                                 </td>
                                 <td className="col-2">
-                                    <textarea className="form-control" name="note_10" value={note_10} rows="1" onChange={this.createStudent_10}></textarea>
+                                    <textarea className="form-control" name="note_10" rows="1" value={note_10} onChange={this.createStudent_10}></textarea>
                                 </td>
                             </tr>
 
