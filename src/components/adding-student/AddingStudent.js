@@ -250,7 +250,7 @@ class AddingStudent extends Component {
         let { codeOfClass, name, dob, gender, phone, note } = this.state;
 
         let errorName = [];
-        if (codeOfClass === ""||codeOfClass===null||codeOfClass===undefined) {
+        if (codeOfClass === "" || codeOfClass === null || codeOfClass === undefined) {
             errorName.push("CodeOfClass")
         }
         if (!phone.match("^[0-9]{10}$")) {
@@ -271,7 +271,7 @@ class AddingStudent extends Component {
             errorName.push("phone")
         }
 
-        
+
         if (name === "") {
             errorName.push("name")
         }
@@ -359,7 +359,7 @@ class AddingStudent extends Component {
         } else {
             alert("Please not empty! " + errorName);
         }
-        
+
 
 
     }
@@ -387,16 +387,16 @@ class AddingStudent extends Component {
             note: note_1,
         }
         if (singleCheck_1) {
-            if (!phone_1.match("^[0-9]{10}$")|| phone_1 ==="") {
+            if (!phone_1.match("^[0-9]{10}$") || phone_1 === "") {
                 alert("Student_1: Wrong format of phone!");
             }
-            if(codeOfClass_1 ===""||codeOfClass_1===null||codeOfClass_1===undefined){
+            if (codeOfClass_1 === "" || codeOfClass_1 === null || codeOfClass_1 === undefined) {
                 alert("Student_1: Please not empty code of class");
             }
             if (dob_1 === "") {
                 alert("Student_1: Please not empty code of class");
-            }          
-            if(gender_1 ===""){
+            }
+            if (gender_1 === "") {
                 alert("Student_1: Please not empty gender");
             }
             if (name_1.length > 25 || name_1 === "") {
@@ -449,16 +449,16 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_2) {
-            if (!phone_2.match("^[0-9]{10}$")|| phone_2 ==="") {
+            if (!phone_2.match("^[0-9]{10}$") || phone_2 === "") {
                 alert("Student_2: Wrong format of phone!");
             }
-            if(codeOfClass_2 ===""||codeOfClass_2===null||codeOfClass_2===undefined){
+            if (codeOfClass_2 === "" || codeOfClass_2 === null || codeOfClass_2 === undefined) {
                 alert("Student_2: Please not empty code of class");
             }
             if (dob_2 === "") {
                 alert("Student_2: Please not empty code of class");
-            }          
-            if(gender_2 ===""){
+            }
+            if (gender_2 === "") {
                 alert("Student_2: Please not empty gender");
             }
             if (name_2.length > 25 || name_2 === "") {
@@ -496,16 +496,16 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_3) {
-            if (!phone_3.match("^[0-9]{10}$")|| phone_3 ==="") {
+            if (!phone_3.match("^[0-9]{10}$") || phone_3 === "") {
                 alert("Student_3: Wrong format of phone!");
             }
-            if(codeOfClass_3 ===""||codeOfClass_3===null||codeOfClass_3===undefined){
+            if (codeOfClass_3 === "" || codeOfClass_3 === null || codeOfClass_3 === undefined) {
                 alert("Student_3: Please not empty code of class");
             }
             if (dob_3 === "") {
                 alert("Student_3: Please not empty code of class");
-            }          
-            if(gender_3 ===""){
+            }
+            if (gender_3 === "") {
                 alert("Student_3: Please not empty gender");
             }
             if (name_3.length > 25 || name_3 === "") {
@@ -543,16 +543,16 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_4) {
-            if (!phone_4.match("^[0-9]{10}$")|| phone_4 ==="") {
+            if (!phone_4.match("^[0-9]{10}$") || phone_4 === "") {
                 alert("Student_4: Wrong format of phone!");
             }
-            if(codeOfClass_4 ===""||codeOfClass_4===null||codeOfClass_4===undefined){
+            if (codeOfClass_4 === "" || codeOfClass_4 === null || codeOfClass_4 === undefined) {
                 alert("Student_4: Please not empty code of class");
             }
             if (dob_4 === "") {
                 alert("Student_4: Please not empty code of class");
-            }          
-            if(gender_4 ===""){
+            }
+            if (gender_4 === "") {
                 alert("Student_4: Please not empty gender");
             }
             if (name_4.length > 25 || name_4 === "") {
@@ -590,16 +590,16 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_5) {
-            if (!phone_5.match("^[0-9]{10}$")|| phone_5 ==="") {
+            if (!phone_5.match("^[0-9]{10}$") || phone_5 === "") {
                 alert("Student_5: Wrong format of phone!");
             }
-            if(codeOfClass_5 ===""||codeOfClass_5===null||codeOfClass_5===undefined){
+            if (codeOfClass_5 === "" || codeOfClass_5 === null || codeOfClass_5 === undefined) {
                 alert("Student_5: Please not empty code of class");
             }
             if (dob_5 === "") {
                 alert("Student_5: Please not empty code of class");
-            }          
-            if(gender_5 ===""){
+            }
+            if (gender_5 === "") {
                 alert("Student_5: Please not empty gender");
             }
             if (name_5.length > 25 || name_5 === "") {
@@ -637,16 +637,16 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_6) {
-            if (!phone_6.match("^[0-9]{10}$")|| phone_6 ==="") {
+            if (!phone_6.match("^[0-9]{10}$") || phone_6 === "") {
                 alert("Student_6: Wrong format of phone!");
             }
-            if(codeOfClass_6 ===""||codeOfClass_6===null||codeOfClass_6===undefined){
+            if (codeOfClass_6 === "" || codeOfClass_6 === null || codeOfClass_6 === undefined) {
                 alert("Student_6: Please not empty code of class");
             }
             if (dob_6 === "") {
                 alert("Student_6: Please not empty code of class");
-            }          
-            if(gender_6 ===""){
+            }
+            if (gender_6 === "") {
                 alert("Student_6: Please not empty gender");
             }
             if (name_6.length > 25 || name_6 === "") {
@@ -684,16 +684,16 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_7) {
-            if (!phone_7.match("^[0-9]{10}$")|| phone_7 ==="") {
+            if (!phone_7.match("^[0-9]{10}$") || phone_7 === "") {
                 alert("Student_7: Wrong format of phone!");
             }
-            if(codeOfClass_7 ===""||codeOfClass_7===null||codeOfClass_7===undefined){
+            if (codeOfClass_7 === "" || codeOfClass_7 === null || codeOfClass_7 === undefined) {
                 alert("Student_7: Please not empty code of class");
             }
             if (dob_7 === "") {
                 alert("Student_7: Please not empty code of class");
-            }          
-            if(gender_7 ===""){
+            }
+            if (gender_7 === "") {
                 alert("Student_7: Please not empty gender");
             }
             if (name_7.length > 25 || name_7 === "") {
@@ -731,16 +731,16 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_8) {
-            if (!phone_8.match("^[0-9]{10}$")|| phone_8 ==="") {
+            if (!phone_8.match("^[0-9]{10}$") || phone_8 === "") {
                 alert("Student_8: Wrong format of phone!");
             }
-            if(codeOfClass_8 ===""||codeOfClass_8===null||codeOfClass_8===undefined){
+            if (codeOfClass_8 === "" || codeOfClass_8 === null || codeOfClass_8 === undefined) {
                 alert("Student_8: Please not empty code of class");
             }
             if (dob_8 === "") {
                 alert("Student_8: Please not empty code of class");
-            }          
-            if(gender_8 ===""){
+            }
+            if (gender_8 === "") {
                 alert("Student_8: Please not empty gender");
             }
             if (name_8.length > 25 || name_8 === "") {
@@ -778,16 +778,16 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_9) {
-            if (!phone_9.match("^[0-9]{10}$")|| phone_9 ==="") {
+            if (!phone_9.match("^[0-9]{10}$") || phone_9 === "") {
                 alert("Student_9: Wrong format of phone!");
             }
-            if(codeOfClass_9 ===""||codeOfClass_9===null||codeOfClass_9===undefined){
+            if (codeOfClass_9 === "" || codeOfClass_9 === null || codeOfClass_9 === undefined) {
                 alert("Student_9: Please not empty code of class");
             }
             if (dob_9 === "") {
                 alert("Student_9: Please not empty code of class");
-            }          
-            if(gender_9 ===""){
+            }
+            if (gender_9 === "") {
                 alert("Student_9: Please not empty gender");
             }
             if (name_9.length > 25 || name_9 === "") {
@@ -825,16 +825,16 @@ class AddingStudent extends Component {
         }
 
         if (singleCheck_10) {
-            if (!phone_10.match("^[0-9]{10}$")|| phone_10 ==="") {
+            if (!phone_10.match("^[0-9]{10}$") || phone_10 === "") {
                 alert("Student_10: Wrong format of phone!");
             }
-            if(codeOfClass_10 ===""||codeOfClass_10===null||codeOfClass_10===undefined){
+            if (codeOfClass_10 === "" || codeOfClass_10 === null || codeOfClass_10 === undefined) {
                 alert("Student_10: Please not empty code of class");
             }
             if (dob_10 === "") {
                 alert("Student_10: Please not empty code of class");
-            }          
-            if(gender_10 ===""){
+            }
+            if (gender_10 === "") {
                 alert("Student_10: Please not empty gender");
             }
             if (name_10.length > 25 || name_10 === "") {
@@ -868,7 +868,7 @@ class AddingStudent extends Component {
         this.saveStudent_10();
 
         if ((singleCheck_1 || singleCheck_2 || singleCheck_3 || singleCheck_4 || singleCheck_5 || singleCheck_6 || singleCheck_7 || singleCheck_8 || singleCheck_9 || this.onSingleCheck_10) === true) {
-            
+
         } else if ((singleCheck_1 && singleCheck_2 && singleCheck_3 && singleCheck_4 && singleCheck_5 && singleCheck_6 && singleCheck_7 && singleCheck_8 && singleCheck_9 && this.onSingleCheck_10) === false) {
             alert("Nothing to save Student information!");
         }
@@ -975,6 +975,9 @@ class AddingStudent extends Component {
     deleteStudent = () => {
         let { singleCheck_1, singleCheck_2, singleCheck_3, singleCheck_4, singleCheck_5, singleCheck_6, singleCheck_7, singleCheck_8, singleCheck_9, singleCheck_10 } = this.state;
 
+
+        let showInfor =[];
+
         this.setState({
             checkAll: false,
         });
@@ -989,8 +992,8 @@ class AddingStudent extends Component {
                 phone_1: "",
                 note_1: "",
             });
-        }
-        if (singleCheck_2) {
+            showInfor.push(" Student_1");
+        } if (singleCheck_2) {
             this.setState({
                 singleCheck_2: false,
                 codeOfClass_2: "",
@@ -1000,8 +1003,8 @@ class AddingStudent extends Component {
                 phone_2: "",
                 note_2: "",
             });
-        }
-        if (singleCheck_3) {
+            showInfor.push(" Student_2");
+        } if (singleCheck_3) {
             this.setState({
                 singleCheck_3: false,
                 codeOfClass_3: "",
@@ -1011,8 +1014,8 @@ class AddingStudent extends Component {
                 phone_3: "",
                 note_3: "",
             });
-        }
-        if (singleCheck_4) {
+            showInfor.push(" Student_3");
+        } if (singleCheck_4) {
             this.setState({
                 singleCheck_4: false,
                 codeOfClass_4: "",
@@ -1022,8 +1025,8 @@ class AddingStudent extends Component {
                 phone_4: "",
                 note_4: "",
             });
-        }
-        if (singleCheck_5) {
+            showInfor.push(" Student_4");
+        } if (singleCheck_5) {
             this.setState({
                 singleCheck_5: false,
                 codeOfClass_5: "",
@@ -1033,8 +1036,8 @@ class AddingStudent extends Component {
                 phone_5: "",
                 note_5: "",
             });
-        }
-        if (singleCheck_6) {
+            showInfor.push(" Student_5");
+        } if (singleCheck_6) {
             this.setState({
                 singleCheck_6: false,
                 codeOfClass_6: "",
@@ -1044,8 +1047,8 @@ class AddingStudent extends Component {
                 phone_6: "",
                 note_6: "",
             });
-        }
-        if (singleCheck_7) {
+            showInfor.push(" Student_6");
+        } if (singleCheck_7) {
             this.setState({
                 singleCheck_7: false,
                 codeOfClass_7: "",
@@ -1055,8 +1058,8 @@ class AddingStudent extends Component {
                 phone_7: "",
                 note_7: "",
             });
-        }
-        if (singleCheck_8) {
+            showInfor.push(" Student_7");
+        } if (singleCheck_8) {
             this.setState({
                 singleCheck_8: false,
                 codeOfClass_8: "",
@@ -1066,8 +1069,8 @@ class AddingStudent extends Component {
                 phone_8: "",
                 note_8: "",
             });
-        }
-        if (singleCheck_9) {
+            showInfor.push(" Student_8");
+        } if (singleCheck_9) {
             this.setState({
                 singleCheck_9: false,
                 codeOfClass_9: "",
@@ -1077,8 +1080,8 @@ class AddingStudent extends Component {
                 phone_9: "",
                 note_9: "",
             });
-        }
-        if (singleCheck_10) {
+            showInfor.push(" Student_9");
+        } if (singleCheck_10) {
             this.setState({
                 singleCheck_10: false,
                 codeOfClass_10: "",
@@ -1088,15 +1091,14 @@ class AddingStudent extends Component {
                 phone_10: "",
                 note_10: "",
             });
+            showInfor.push(" Student_10");
         }
 
-        if ((singleCheck_1 && singleCheck_2 && singleCheck_3 && singleCheck_4 && singleCheck_5 && singleCheck_6 && singleCheck_7 && singleCheck_8 && singleCheck_9 && this.onSingleCheck_10) === false) {
+        if(showInfor===undefined||showInfor.length===0){
             alert("Nothing to delete Student information!");
-        } else {
-
-            alert("Delete Student information successfully!");
+        }else{
+            alert("Delete successfully! "+showInfor);
         }
-
 
     }
 
