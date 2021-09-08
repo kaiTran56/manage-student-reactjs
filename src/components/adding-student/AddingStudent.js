@@ -405,6 +405,17 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_1 information successfully!");
+                        this.setState({
+
+                            singleCheck_1: false,
+                            codeOfClass_1: "",
+                            name_1: "",
+                            dob_1: "",
+                            gender_1: "",
+                            phone_1: "",
+                            note_1: "",
+
+                        })
                     })
                     ;
             }
@@ -467,8 +478,19 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_2 information successfully!");
-                    })
-                    ;
+                        this.setState({
+
+                            singleCheck_2: false,
+                            codeOfClass_2: "",
+                            name_2: "",
+                            dob_2: "",
+                            gender_2: "",
+                            phone_2: "",
+                            note_2: "",
+
+                        });
+                    });
+                    
             }
         }
     }
@@ -514,6 +536,17 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_3 information successfully!");
+                        this.setState({
+
+                            singleCheck_3: false,
+                            codeOfClass_3: "",
+                            name_3: "",
+                            dob_3: "",
+                            gender_3: "",
+                            phone_3: "",
+                            note_3: "",
+
+                        })
                     })
                     ;
             }
@@ -561,6 +594,17 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_4 information successfully!");
+                        this.setState({
+
+                            singleCheck_4: false,
+                            codeOfClass_4: "",
+                            name_4: "",
+                            dob_4: "",
+                            gender_4: "",
+                            phone_4: "",
+                            note_4: "",
+
+                        })
                     })
                     ;
             }
@@ -608,6 +652,17 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_5 information successfully!");
+                        this.setState({
+
+                            singleCheck_5: false,
+                            codeOfClass_5: "",
+                            name_5: "",
+                            dob_5: "",
+                            gender_5: "",
+                            phone_5: "",
+                            note_5: "",
+
+                        })
                     })
                     ;
             }
@@ -655,6 +710,17 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_6 information successfully!");
+                        this.setState({
+
+                            singleCheck_6: false,
+                            codeOfClass_6: "",
+                            name_6: "",
+                            dob_6: "",
+                            gender_6: "",
+                            phone_6: "",
+                            note_6: "",
+
+                        })
                     })
                     ;
             }
@@ -702,6 +768,17 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_7 information successfully!");
+                        this.setState({
+
+                            singleCheck_7: false,
+                            codeOfClass_7: "",
+                            name_7: "",
+                            dob_7: "",
+                            gender_7: "",
+                            phone_7: "",
+                            note_7: "",
+
+                        })
                     })
                     ;
             }
@@ -749,6 +826,17 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_8 information successfully!");
+                        this.setState({
+
+                            singleCheck_8: false,
+                            codeOfClass_8: "",
+                            name_8: "",
+                            dob_8: "",
+                            gender_8: "",
+                            phone_8: "",
+                            note_8: "",
+
+                        })
                     })
                     ;
             }
@@ -796,6 +884,17 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_9 information successfully!");
+                        this.setState({
+
+                            singleCheck_9: false,
+                            codeOfClass_9: "",
+                            name_9: "",
+                            dob_9: "",
+                            gender_9: "",
+                            phone_9: "",
+                            note_9: "",
+
+                        })
                     })
                     ;
             }
@@ -843,6 +942,17 @@ class AddingStudent extends Component {
                 axios.post(typeURL.SAVE_STUDENT, studentTemp)
                     .then(response => {
                         alert("Save Student_10 information successfully!");
+                        this.setState({
+
+                            singleCheck_10: false,
+                            codeOfClass_10: "",
+                            name_10: "",
+                            dob_10: "",
+                            gender_10: "",
+                            phone_10: "",
+                            note_10: "",
+
+                        })
                     })
                     ;
             }
@@ -872,11 +982,7 @@ class AddingStudent extends Component {
         } else if ((singleCheck_1 && singleCheck_2 && singleCheck_3 && singleCheck_4 && singleCheck_5 && singleCheck_6 && singleCheck_7 && singleCheck_8 && singleCheck_9 && this.onSingleCheck_10) === false) {
             alert("Nothing to save Student information!");
         }
-
-
-
         this.setState({
-
             checkAll: false,
 
             codeOfClass: "",
@@ -885,89 +991,10 @@ class AddingStudent extends Component {
             gender: "",
             phone: "",
             note: "",
-
-
-            singleCheck_1: false,
-            codeOfClass_1: "",
-            name_1: "",
-            dob_1: "",
-            gender_1: "",
-            phone_1: "",
-            note_1: "",
-
-            singleCheck_2: false,
-            codeOfClass_2: "",
-            name_2: "",
-            dob_2: "",
-            gender_2: "",
-            phone_2: "",
-            note_2: "",
-
-            singleCheck_3: false,
-            codeOfClass_3: "",
-            name_3: "",
-            dob_3: "",
-            gender_3: "",
-            phone_3: "",
-            note_3: "",
-
-            singleCheck_4: false,
-            codeOfClass_4: "",
-            name_4: "",
-            dob_4: "",
-            gender_4: "",
-            phone_4: "",
-            note_4: "",
-
-            singleCheck_5: false,
-            codeOfClass_5: "",
-            name_5: "",
-            dob_5: "",
-            gender_5: "",
-            phone_5: "",
-            note_5: "",
-
-            singleCheck_6: false,
-            codeOfClass_6: "",
-            name_6: "",
-            dob_6: "",
-            gender_6: "",
-            phone_6: "",
-            note_6: "",
-
-            singleCheck_7: false,
-            codeOfClass_7: "",
-            name_7: "",
-            dob_7: "",
-            gender_7: "",
-            phone_7: "",
-            note_7: "",
-
-            singleCheck_8: false,
-            codeOfClass_8: "",
-            name_8: "",
-            dob_8: "",
-            gender_8: "",
-            phone_8: "",
-            note_8: "",
-
-            singleCheck_9: false,
-            codeOfClass_9: "",
-            name_9: "",
-            dob_9: "",
-            gender_9: "",
-            phone_9: "",
-            note_9: "",
-
-            singleCheck_10: false,
-            codeOfClass_10: "",
-            name_10: "",
-            dob_10: "",
-            gender_10: "",
-            phone_10: "",
-            note_10: "",
-
         })
+
+
+
 
 
     }
@@ -976,7 +1003,7 @@ class AddingStudent extends Component {
         let { singleCheck_1, singleCheck_2, singleCheck_3, singleCheck_4, singleCheck_5, singleCheck_6, singleCheck_7, singleCheck_8, singleCheck_9, singleCheck_10 } = this.state;
 
 
-        let showInfor =[];
+        let showInfor = [];
 
         this.setState({
             checkAll: false,
@@ -1094,10 +1121,10 @@ class AddingStudent extends Component {
             showInfor.push(" Student_10");
         }
 
-        if(showInfor===undefined||showInfor.length===0){
+        if (showInfor === undefined || showInfor.length === 0) {
             alert("Nothing to delete Student information!");
-        }else{
-            alert("Delete successfully! "+showInfor);
+        } else {
+            alert("Delete successfully! " + showInfor);
         }
 
     }
@@ -1611,9 +1638,9 @@ class AddingStudent extends Component {
 
                         </tbody>
 
-                    </table>
-                    <button type="button" className="btn btn-md btn-danger batch-input-position" onClick={this.deleteStudent}>Delete</button>{' '}{' '}
-                    <button type="button" className="btn btn-md btn-success batch-input-position" onClick={this.saveStudent}>Register</button>
+                    </table><button type="button" className="btn btn-md btn-success batch-input-position" onClick={this.saveStudent}>Register</button>&nbsp;{''}
+                    <button type="button" className="btn btn-md btn-danger batch-input-position" onClick={this.deleteStudent}>Delete</button>&nbsp;&nbsp;
+                    
                 </div>
             </div>
         );
