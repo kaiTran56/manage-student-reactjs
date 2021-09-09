@@ -490,7 +490,7 @@ class AddingStudent extends Component {
 
                         });
                     });
-                    
+
             }
         }
     }
@@ -1152,6 +1152,7 @@ class AddingStudent extends Component {
                 <div className="card-header">
                     <form onSubmit={this.onPreventReload}>
                         <div className=" row">
+                            <div className="col-1"></div>
                             <div className="col-2">
                                 <select className="form-control" name="codeOfClass" onChange={this.createStudentBatchInput} value={codeOfClass} required>
                                     <option>None</option>
@@ -1180,7 +1181,7 @@ class AddingStudent extends Component {
                                 <input type="text"
                                     className="form-control " name="phone" value={phone} aria-describedby="helpId" required placeholder="Số điện thoại" onChange={this.createStudentBatchInput} />
                             </div>
-                            <div className="col-3">
+                            <div className="col-2">
                                 <input type="text"
                                     className="form-control " name="note" value={note} aria-describedby="helpId" required placeholder="Ghi chú" onChange={this.createStudentBatchInput} />
                             </div>
@@ -1640,7 +1641,7 @@ class AddingStudent extends Component {
 
                     </table><button type="button" className="btn btn-md btn-success batch-input-position" onClick={this.saveStudent}>Register</button>&nbsp;{''}
                     <button type="button" className="btn btn-md btn-danger batch-input-position" onClick={this.deleteStudent}>Delete</button>&nbsp;&nbsp;
-                    
+
                 </div>
             </div>
         );
