@@ -8,5 +8,8 @@ export const DOWNLOAD_EXCEL_FILE = "https://manage-student-api.herokuapp.com/api
 
 export const SAVE_STUDENT = "https://manage-student-api.herokuapp.com/api/student/save";
 
+export const CHECK_DUPLICATED ="https://manage-student-api.herokuapp.com/api/student/validated?nameStudent=";
+
 
 // https://manage-student-api.herokuapp.com/
+// http://localhost:8080/api/student

@@ -9,7 +9,8 @@ export default class DisplayStudent extends Component {
         super(props);
         this.state = {
             courseList: [],
-            studentList: []
+            studentList: [],
+            codeOfClass: "",
 
         };
     }
@@ -32,22 +33,36 @@ export default class DisplayStudent extends Component {
 
 
     exportExcelFile = () => {
-        console.log(this.state.studentList);
-        axios.get(typeUrl.DOWNLOAD_EXCEL_FILE, {
-            responseType: 'blob',
-            headers: {
-                'Content-Type': 'application/json'
+
+        let { codeOfClass, studentList } = this.state;
+
+        if (studentList.length === 0) {
+            alert("Nothing to export to excel file!");
+        } else {
+            if (codeOfClass != "" || codeOfClass.length > 0) {
+                axios.get(typeUrl.DOWNLOAD_EXCEL_FILE + "/" + codeOfClass, {
+                    responseType: 'blob',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(response => {
+                        const url = window.URL.createObjectURL(new Blob([response.data]));
+                        const link = document.createElement('a');
+                        link.href = url;
+                        link.setAttribute('download', 'excel_course_' + codeOfClass + "_" + new Date() + '_statistic.xlsx');
+                        document.body.appendChild(link);
+                        link.click();
+                    })
+                    .catch(err => console.log(err));
+                alert("Tải file thành công!");
+            } else {
+                alert("Can't download File, please choose a code of Course!");
             }
-        })
-            .then(response => {
-                const url = window.URL.createObjectURL(new Blob([response.data]));
-                const link = document.createElement('a');
-                link.href = url;
-                link.setAttribute('download', 'excel_' + new Date() + '_statistic.xlsx');
-                document.body.appendChild(link);
-                link.click();
-            })
-            .catch(err => console.log(err));
+        }
+
+
+
     }
 
     getAllStudent = () => {
@@ -66,7 +81,8 @@ export default class DisplayStudent extends Component {
     getStudentByCourse = (event) => {
         let course = event.target.value;
         this.setState({
-            studentList: []
+            studentList: [],
+            codeOfClass: course,
         })
         console.log(course);
         if (course !== "All") {
@@ -138,16 +154,15 @@ export default class DisplayStudent extends Component {
                         <div className="col-1">Lớp</div>
                         <div className="col-3">
                             <select className="custom-select" onChange={this.getStudentByCourse}>
-                                <option value="All">All Student</option>
+                                <option value="">None</option>
                                 {elementCourse}
+                                <option value="All">All Student</option>
                             </select>
                         </div>
                     </div>
                     <div className="card-body">
                         <div className="scrollit">
                             <table className="table table-bordered main-table" >
-
-
                                 <thead className="thead thead-dark sticky-header sticky-header-position small">
                                     <tr className="d-flex ">
                                         <th className="col-1 text-center sticky-col first-header">
@@ -164,15 +179,11 @@ export default class DisplayStudent extends Component {
                                 <tbody>
                                     {elementStudent}
                                 </tbody>
-
-
                             </table></div>
                         <button type="button" className="btn btn-success batch-input-position" onClick={this.exportExcelFile}>Export</button>
                     </div>
                 </div>
             </div >
-
-
 
         );
     }
