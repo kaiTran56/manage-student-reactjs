@@ -40,22 +40,26 @@ export default class DisplayStudent extends Component {
             alert("Nothing to export to excel file!");
         } else {
             if (codeOfClass != "" || codeOfClass.length > 0) {
-                axios.get(typeUrl.DOWNLOAD_EXCEL_FILE + "/" + codeOfClass, {
-                    responseType: 'blob',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                })
-                    .then(response => {
-                        const url = window.URL.createObjectURL(new Blob([response.data]));
-                        const link = document.createElement('a');
-                        link.href = url;
-                        link.setAttribute('download', 'excel_course_' + codeOfClass + "_" + new Date() + '_statistic.xlsx');
-                        document.body.appendChild(link);
-                        link.click();
+
+                if (window.confirm('Bạn có muốn tải file thống kê không?')) {
+                    axios.get(typeUrl.DOWNLOAD_EXCEL_FILE + "/" + codeOfClass, {
+                        responseType: 'blob',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
                     })
-                    .catch(err => console.log(err));
-                alert("Tải file thành công!");
+                        .then(response => {
+                            const url = window.URL.createObjectURL(new Blob([response.data]));
+                            const link = document.createElement('a');
+                            link.href = url;
+                            link.setAttribute('download', 'excel_course_' + codeOfClass + "_" + new Date() + '_statistic.xlsx');
+                            document.body.appendChild(link);
+                            link.click();
+                        })
+                        .catch(err => console.log(err));
+                } else {
+
+                }
             } else {
                 alert("Can't download File, please choose a code of Course!");
             }
@@ -95,8 +99,8 @@ export default class DisplayStudent extends Component {
                         });
                     console.log(res);
                 }
-                )
-        } else if(course === "All"){
+                ).catch(err => alert(err));
+        } else if (course === "All") {
             this.getAllStudent();
         }
     }
