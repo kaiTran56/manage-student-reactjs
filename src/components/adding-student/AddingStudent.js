@@ -373,7 +373,7 @@ class AddingStudent extends Component {
                             showDuplicated_1: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_1: false, showDuplicated_1: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_1: false,
@@ -484,7 +484,7 @@ class AddingStudent extends Component {
                             showDuplicated_2: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_2: false, showDuplicated_2: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_2: false,
@@ -583,7 +583,7 @@ class AddingStudent extends Component {
                             showDuplicated_3: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_3: false, showDuplicated_3: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_3: false,
@@ -677,7 +677,7 @@ class AddingStudent extends Component {
                             showDuplicated_4: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_4: true, showDuplicated_4: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_4: false,
@@ -771,7 +771,7 @@ class AddingStudent extends Component {
                             showDuplicated_5: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_5: true, showDuplicated_5: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_5: false,
@@ -865,7 +865,7 @@ class AddingStudent extends Component {
                             showDuplicated_6: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_6: true, showDuplicated_6: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_6: false,
@@ -958,7 +958,7 @@ class AddingStudent extends Component {
                             showDuplicated_7: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_7: true, showDuplicated_7: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_7: false,
@@ -1051,7 +1051,7 @@ class AddingStudent extends Component {
                             showDuplicated_8: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_8: true, showDuplicated_8: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_8: false,
@@ -1144,7 +1144,7 @@ class AddingStudent extends Component {
                             showDuplicated_9: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_9: true, showDuplicated_9: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_9: false,
@@ -1237,7 +1237,7 @@ class AddingStudent extends Component {
                             showDuplicated_10: true
                         })
                         setTimeout(() => this.setState({ showToast: false, duplicated_10: true, showDuplicated_10: false }), 3000);
-                    }, 100);
+                    }, 2000);
                 } else {
                     this.setState({
                         duplicated_10: false,
