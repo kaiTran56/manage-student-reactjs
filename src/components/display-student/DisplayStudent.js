@@ -96,7 +96,7 @@ export default class DisplayStudent extends Component {
                     console.log(res);
                 }
                 )
-        } else {
+        } else if(course === "All"){
             this.getAllStudent();
         }
     }
@@ -154,7 +154,7 @@ export default class DisplayStudent extends Component {
                         <div className="col-1">Lớp</div>
                         <div className="col-3">
                             <select className="custom-select" onChange={this.getStudentByCourse}>
-                                <option value="">None</option>
+                                <option disabled selected>None</option>
                                 {elementCourse}
                                 <option value="All">All Student</option>
                             </select>
