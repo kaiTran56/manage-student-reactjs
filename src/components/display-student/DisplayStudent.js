@@ -180,6 +180,7 @@ export default class DisplayStudent extends Component {
                             mother. I shall be the cloud and you the moon. I shall cover you with
                             both my hands, and our house-top will be the blue sky
                         </p>
+                        <p><a href="https://www.nosweatshakespeare.com/quotes/famous/">‘To be, or not to be: that is the question</a></p>
                         <div className="scrollit">
                             <table className="table table-bordered main-table" >
                                 <thead className="thead thead-dark sticky-header sticky-header-position small">
