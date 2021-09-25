@@ -165,6 +165,21 @@ export default class DisplayStudent extends Component {
                         </div>
                     </div>
                     <div className="card-body">
+                    
+                        <p>
+                            Mother, the folk who live up in the <strong>clouds</strong> call out to me-
+                            "We play from the time we wake till the day ends.
+                            We play with the <strong><mark>golden dawn</mark></strong>, we play with the silver moon."
+                            I ask, "But how am I to get up to you ?"
+                            They answer, "Come to the edge of the earth, lift up your hands to the sky, and you will be taken up into the clouds."
+                            "My mother is waiting for me at home, "I say, "How can I leave her and
+                            come?"  </p>
+                            <img src="https://images5.alphacoders.com/104/thumb-350-1043977.jpg" alt="Italian Trulli" className="center"/>
+                        <p >
+                            Then they smile and float away. But I know a nicer game than that,
+                            mother. I shall be the cloud and you the moon. I shall cover you with
+                            both my hands, and our house-top will be the blue sky
+                        </p>
                         <div className="scrollit">
                             <table className="table table-bordered main-table" >
                                 <thead className="thead thead-dark sticky-header sticky-header-position small">
@@ -188,7 +203,7 @@ export default class DisplayStudent extends Component {
                     </div>
                 </div>
             </div >
-
+            
         );
     }
 }

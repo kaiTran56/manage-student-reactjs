@@ -1650,20 +1650,20 @@ class AddingStudent extends Component {
                         <tbody>
 
                             <tr className={showDuplicated_1 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_1" checked={singleCheck_1} onClick={this.onSingleCheck_1} />
                                         <label className="form-check-label" for="inlineCheckbox1">1</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_1" value={codeOfClass_1} onChange={this.createStudent_1}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_1" aria-describedby="helpId" placeholder="Tên học sinh" value={name_1} onChange={this.createStudent_1} />
@@ -1694,20 +1694,20 @@ class AddingStudent extends Component {
                             {/* \---------------------------------------------------------------------\ */}
 
                             <tr className={showDuplicated_2 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_2" checked={singleCheck_2} onClick={this.onSingleCheck_2} />
                                         <label className="form-check-label" for="inlineCheckbox1">2</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_2" value={codeOfClass_2} onChange={this.createStudent_2}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_2" aria-describedby="helpId" placeholder="Tên học sinh" value={name_2} onChange={this.createStudent_2} />
@@ -1736,20 +1736,20 @@ class AddingStudent extends Component {
                             </tr>
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className={showDuplicated_3 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_3" checked={singleCheck_3} onClick={this.onSingleCheck_3} />
                                         <label className="form-check-label" for="inlineCheckbox1">3</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_3" value={codeOfClass_3} onChange={this.createStudent_3}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_3" aria-describedby="helpId" placeholder="Tên học sinh" value={name_3} onChange={this.createStudent_3} />
@@ -1778,20 +1778,20 @@ class AddingStudent extends Component {
                             </tr>
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className={showDuplicated_4 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_4" checked={singleCheck_4} onClick={this.onSingleCheck_4} />
                                         <label className="form-check-label" for="inlineCheckbox1">4</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_4" value={codeOfClass_4} onChange={this.createStudent_4}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_4" aria-describedby="helpId" placeholder="Tên học sinh" value={name_4} onChange={this.createStudent_4} />
@@ -1821,20 +1821,20 @@ class AddingStudent extends Component {
 
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className={showDuplicated_5 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_5" checked={singleCheck_5} onClick={this.onSingleCheck_5} />
                                         <label className="form-check-label" for="inlineCheckbox1">5</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_5" value={codeOfClass_5} onChange={this.createStudent_5}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_5" aria-describedby="helpId" placeholder="Tên học sinh" value={name_5} onChange={this.createStudent_5} />
@@ -1863,20 +1863,20 @@ class AddingStudent extends Component {
                             </tr>
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className={showDuplicated_6 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_6" checked={singleCheck_6} onClick={this.onSingleCheck_6} />
                                         <label className="form-check-label" for="inlineCheckbox1">6</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_6" value={codeOfClass_6} onChange={this.createStudent_6}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_6" aria-describedby="helpId" placeholder="Tên học sinh" value={name_6} onChange={this.createStudent_6} />
@@ -1905,20 +1905,20 @@ class AddingStudent extends Component {
                             </tr>
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className={showDuplicated_7 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_7" checked={singleCheck_7} onClick={this.onSingleCheck_7} />
                                         <label className="form-check-label" for="inlineCheckbox1">7</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_7" value={codeOfClass_7} onChange={this.createStudent_7}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_7" aria-describedby="helpId" placeholder="Tên học sinh" value={name_7} onChange={this.createStudent_7} />
@@ -1948,20 +1948,20 @@ class AddingStudent extends Component {
 
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className={showDuplicated_8 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_8" checked={singleCheck_8} onClick={this.onSingleCheck_8} />
                                         <label className="form-check-label" for="inlineCheckbox1">8</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_8" value={codeOfClass_8} onChange={this.createStudent_8}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_8" aria-describedby="helpId" placeholder="Tên học sinh" value={name_8} onChange={this.createStudent_8} />
@@ -1991,20 +1991,20 @@ class AddingStudent extends Component {
 
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className={showDuplicated_9 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_9" checked={singleCheck_9} onClick={this.onSingleCheck_9} />
                                         <label className="form-check-label" for="inlineCheckbox1">9</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_9" value={codeOfClass_9} onChange={this.createStudent_9}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_9" aria-describedby="helpId" placeholder="Tên học sinh" value={name_9} onChange={this.createStudent_9} />
@@ -2034,20 +2034,20 @@ class AddingStudent extends Component {
 
                             {/* \---------------------------------------------------------------------\ */}
                             <tr className={showDuplicated_10 === true ? "d-flex table-danger" : "d-flex"} >
-                                <th className="col-1 text-center sticky-col first-col">
+                                <th className="col-1 text-center ">
                                     <div className="form-check form-check-inline">
                                         <input className="form-check-input" type="checkbox" name="singleCheck_10" checked={singleCheck_10} onClick={this.onSingleCheck_10} />
                                         <label className="form-check-label" for="inlineCheckbox1">10</label>
                                     </div>
                                 </th>
-                                <td className="col-2 sticky-col second-col">
+                                <td className="col-2">
 
                                     <select className="form-control" name="codeOfClass_10" value={codeOfClass_10} onChange={this.createStudent_10}>
                                         <option>None</option>
                                         {elementCourse}
                                     </select>
                                 </td>
-                                <td className="col-2 sticky-col third-col">
+                                <td className="col-2">
 
                                     <input type="text"
                                         className="form-control " name="name_10" aria-describedby="helpId" placeholder="Tên học sinh" value={name_10} onChange={this.createStudent_10} />

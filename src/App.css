@@ -210,3 +210,10 @@ input[type="date"]::-webkit-datetime-edit-day-field{
   left: 4px;
   
 }
+
+body {
+  background-image: url("https://wallpaperaccess.com/full/626893.jpg");
+
+}
+.card { background-color: rgba(245, 245, 245, 0.4); }
+.card-header, .card-footer { opacity: 1}
